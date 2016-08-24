@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sed -i &apos;s/.*major.*/major=$major+1/&apos; /var/lib/jenkins/env/version.properties</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <org.jvnet.hudson.tools.versionnumber.VersionNumberBuilder plugin="versionnumber@1.6">
+      <versionNumberString>1.0.${BUILD_ID}.${BUILDS_TODAY_Z}</versionNumberString>
+      <projectStartDate>1969-12-31 18:30:00.0 UTC</projectStartDate>
+      <environmentVariableName>snapshot</environmentVariableName>
+      <environmentPrefixVariable></environmentPrefixVariable>
+      <oBuildsToday></oBuildsToday>
+      <oBuildsThisWeek></oBuildsThisWeek>
+      <oBuildsThisMonth></oBuildsThisMonth>
+      <oBuildsThisYear></oBuildsThisYear>
+      <oBuildsAllTime></oBuildsAllTime>
+      <skipFailedBuilds>false</skipFailedBuilds>
+      <useAsBuildDisplayName>true</useAsBuildDisplayName>
+    </org.jvnet.hudson.tools.versionnumber.VersionNumberBuilder>
+    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
+      <info>
+        <propertiesFilePath>/var/lib/jenkins/env/version.properties</propertiesFilePath>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
+</project>
