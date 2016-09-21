@@ -22,7 +22,7 @@
       <version>0.0.0</version>
       <packaging>zip</packaging>
       <repository>snapshots</repository>
-      <file>/home/synerzip/gate-resources.zip</file>
+      <file>/home/synerzip/analytics.zip</file>
       <credentialsId></credentialsId>
     </sp.sd.nexusartifactuploader.NexusArtifactUploader>
   </builders>
