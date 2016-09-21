@@ -14,7 +14,7 @@
   <builders>
     <sp.sd.nexusartifactuploader.NexusArtifactUploader plugin="nexus-artifact-uploader@2.3">
       <protocol>http</protocol>
-      <nexusUrl>localhost:8081/nexus</nexusUrl>
+      <nexusUrl>localhost:8081/nexus/content/repositories/snapshots/</nexusUrl>
       <nexusUser>admin</nexusUser>
       <nexusPassword>Kd9Qdyh4fNpTNKqf8K2fAMHzsGtDbbWgZAnYvPisrSs=</nexusPassword>
       <groupId>rezoomex</groupId>
