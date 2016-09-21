@@ -19,7 +19,7 @@
       <nexusPassword>Kd9Qdyh4fNpTNKqf8K2fAMHzsGtDbbWgZAnYvPisrSs=</nexusPassword>
       <groupId>rezoomex</groupId>
       <artifactId>gate</artifactId>
-      <version>0.0.0-SNAPSHOT</version>
+      <version>0.0.0</version>
       <packaging>zip</packaging>
       <repository>snapshots</repository>
       <file>/home/synerzip/gate-resources.zip</file>
