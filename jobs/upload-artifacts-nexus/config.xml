@@ -17,7 +17,7 @@
       <nexusUrl>localhost:8081/nexus/content/repositories/snapshots/</nexusUrl>
       <nexusUser>admin</nexusUser>
       <nexusPassword>Kd9Qdyh4fNpTNKqf8K2fAMHzsGtDbbWgZAnYvPisrSs=</nexusPassword>
-      <groupId>rezoomex</groupId>
+      <groupId>test.gate</groupId>
       <artifactId>gate</artifactId>
       <version>0.0.0</version>
       <packaging>zip</packaging>
