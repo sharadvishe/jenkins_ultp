@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin version="1">
-  <scm class="hudson.plugins.scm_sync_configuration.scms.ScmSyncNoSCM"/>
+  <scm class="hudson.plugins.scm_sync_configuration.scms.ScmSyncGitSCM"/>
+  <scmRepositoryUrl>scm:git:git@github.com:sharadvishe/jenkins_ultp.git</scmRepositoryUrl>
   <noUserCommitMessage>true</noUserCommitMessage>
   <displayStatus>true</displayStatus>
   <commitMessagePattern>Configuration change</commitMessagePattern>
-  <manualSynchronizationIncludes/>
+  <manualSynchronizationIncludes>
+    <include></include>
+  </manualSynchronizationIncludes>
 </hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin>
