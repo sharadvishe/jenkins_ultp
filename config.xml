@@ -32,6 +32,51 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
     </hudson.model.AllView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>master</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>job1</string>
+        <string>job2</string>
+        <string>job3</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.3.1">
+      <owner class="hudson" reference="../../.."/>
+      <name>master-build</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>job1</firstJob>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle>Master Build</buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>All</primaryView>
   <slaveAgentPort>-1</slaveAgentPort>
@@ -40,5 +85,19 @@
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
   </crumbIssuer>
   <nodeProperties/>
-  <globalNodeProperties/>
+  <globalNodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>1</int>
+          <string>JAVA_HOME</string>
+          <string>/opt/jdk/jdk1.8.0_05</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </globalNodeProperties>
 </hudson>

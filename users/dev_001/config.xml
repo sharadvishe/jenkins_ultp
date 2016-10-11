@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<user>
+  <fullName>Developer</fullName>
+  <description></description>
+  <properties>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <jenkins.security.ApiTokenProperty>
+      <apiToken>nRQRFyGtbpuuw5wuzI6IXRJp6gYQuOa5ctqANFNotBi9TGSO4npyjgSZRabnqzTY</apiToken>
+    </jenkins.security.ApiTokenProperty>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@1.27">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.17">
+      <emailAddress>sharad.vishe@synerzip.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+    <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>All</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$Q3/nA2YJvUm7HekwgJNJouvaoONwyG/qwliJ6Ms0Tk.44pnf3vVb2</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>false</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1462794845171</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
+  </properties>
+</user>
