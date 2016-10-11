@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.11">
+<hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.17">
   <hudsonUrl>http://localhost:8080/</hudsonUrl>
   <smtpAuthUsername>sharad.vishe@synerzip.com</smtpAuthUsername>
-  <smtpAuthPassword>Bm+g/FgJK6eNfTPqw/2Z3b7/Ns0qQgyxIOrD6ZrpF5c=</smtpAuthPassword>
+  <smtpAuthPassword>pOOyrSVrFLfL7Dp8oFDhC0GOBlDRFBeCSNOOR8vfASen8naYncgFIp+75OFqySCx3IiFOy5D5xgjQi1aHeM3Pw==</smtpAuthPassword>
   <smtpHost>smtp.gmail.com</smtpHost>
   <useSsl>true</useSsl>
   <smtpPort>465</smtpPort>
